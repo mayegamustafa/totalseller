@@ -1,3 +1,16 @@
+// ✅ 1. Define buildscript FIRST
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.1.0' // or your version
+        classpath 'com.google.gms:google-services:4.4.0'
+    }
+}
+
+// ✅ 2. Then your existing config
 allprojects {
     repositories {
         google()
@@ -6,6 +19,7 @@ allprojects {
 }
 
 rootProject.buildDir = '../build'
+
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
 }
