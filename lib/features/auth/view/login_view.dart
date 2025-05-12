@@ -86,7 +86,7 @@ class LoginView extends HookConsumerWidget {
                             const Gap(Insets.lg),
                             FormBuilderTextField(
                               name: 'name',
-                              initialValue: 'demoseller',
+                              initialValue: '',
                               decoration: InputDecoration(
                                 hintText: TR.of(context).enter_user_name,
                               ),
@@ -94,7 +94,7 @@ class LoginView extends HookConsumerWidget {
                             const Gap(Insets.lg),
                             FormBuilderTextField(
                               name: 'pass',
-                              initialValue: '123123',
+                              initialValue: '',
                               obscureText: true,
                               decoration: InputDecoration(
                                 hintText: TR.of(context).enter_password,
